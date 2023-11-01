@@ -48,3 +48,33 @@ class Library {
         return null;
       }
     }
+
+const library = new Library();
+    
+library.addBook({
+    title: "Book 1",
+    description: "Book 1 description",
+    author: "Book 1 author",
+});
+    
+library.addBook({
+    title: "Book 2",
+    description: "Book 2 description",
+    author: "Book 2 author",
+});
+    
+console.log(library.getBooks());
+    
+library.updateBookById(0, {
+      title: "New title",
+      description: "New description",
+      author: "New author",
+});
+    
+console.log(library.getBooks());
+
+console.log(library.getBookById(1));
+
+library.removeBookById(1);
+
+console.log(library.getBooks());
