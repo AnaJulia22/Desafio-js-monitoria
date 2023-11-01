@@ -1,19 +1,22 @@
 class Book {
-    constructor(title, author, description) {
+    constructor(title, author, description, id) {
         this.title = title;
         this.author = author;
         this.description = description;
+        this.id = id;
     }
 }
 
 class Library {
     constructor() {
         this.books = [];
+        this.Id = 1;
     }
 
     addBook(bookInfo){
-        const book = new Book(bookInfo.title, bookInfo.author, bookInfo.description);
+        const book = new Book(bookInfo.title, bookInfo.author, bookInfo.description, this.Id);
         this.books.push(book);
+        this.Id++; 
         return book;
     }
 
