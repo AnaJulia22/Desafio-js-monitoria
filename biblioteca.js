@@ -60,6 +60,12 @@ library.addBook({
     description: "Book 2 description",
     author: "Book 2 author",
 });
+
+library.addBook({
+  title: "Book 3",
+  description: "Book 3 description",
+  author: "Book 3 author",
+});
     
 console.log(library.getBooks());
     
