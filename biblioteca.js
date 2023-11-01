@@ -21,15 +21,13 @@ class Library {
         return this.books;
     }
 
-    removeBookById(id) {
-        
-        this.books.splice(id, 1);
-        
+    removeBookById(id) {        
+        this.books.splice(id, 1);        
     }
     
     getBookById(id) {
         return this.books[id];
-      }
+    }
     
     updateBookById(id, info) {
         const book = this.getBookById(id);
