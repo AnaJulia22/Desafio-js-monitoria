@@ -24,7 +24,7 @@ class Library {
         return this.books;
     }
 
-    removeBookById(id) {        
+    removeBookById(id) {
       const index = this.books.findIndex(book => book.id == id);
       if (index > 0) {
           this.books.splice(index, 1);
@@ -32,8 +32,7 @@ class Library {
     }
     
     getBookById(id) {
-      const book = this.books.find(book => book.id == id);  
-      return book;
+      return this.books.find(book => book.id == id);  
     }
     
     updateBookById(id, info) {
